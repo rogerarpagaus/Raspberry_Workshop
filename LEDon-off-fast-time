@@ -1,0 +1,11 @@
+import RPi.GPIO as gpio
+import time
+gpio.setmode(gpio.BCM)
+gpio.setup(18, gpio.OUT)
+for i in range (1,50):
+	gpio.output(18, gpio.HIGH)
+	time.sleep(0.01)
+	gpio.output(18, gpio.LOW)
+	time.sleep(0.01)
+gpio.output(18, gpio.LOW)
+gpio.cleanup()
