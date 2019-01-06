@@ -1,6 +1,6 @@
 # Code for switching two LEDs on/off based on a selection, one on Pin 18 and one on Pin 23.
 
-import RPi.GPIO as GPIO
+import RPi.GPIO as gpio
 import time
 
 gpio.setmode(gpio.BCM)
