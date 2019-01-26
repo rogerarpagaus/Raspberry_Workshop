@@ -5,7 +5,9 @@ import time
 gpio.setmode(gpio.BCM)
 gpio.setup(23,gpio.IN,pull_up_down=gpio.PUD_UP)
 gpio.setup(18,gpio.OUT)
-
+gpio.output(18,gpio.HIGH)
+time.sleep(2)
+gpio.output(18,gpio.LOW)
 while True:
   buttonPressed = gpio.input(23)
   if buttonPressed == 1:
