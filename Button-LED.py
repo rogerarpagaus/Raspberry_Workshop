@@ -11,4 +11,4 @@ while True:
   if buttonPressed == 1:
     gpio.output(18,gpio.LOW)
   if buttonPressed ==0:
-    gpio.output(18,glio.HIGH)
+    gpio.output(18,gpio.HIGH)
