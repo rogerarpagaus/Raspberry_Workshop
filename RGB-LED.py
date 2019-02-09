@@ -1,6 +1,5 @@
+#!/usr/local/bin/python3
 # RGB LED for Raspberry Pi B+ in build in case
-
-
 import RPi.GPIO as gpio
 import time
 import random
