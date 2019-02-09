@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+!/usr/bin/python3
 # RGB LED for Raspberry Pi B+ in build in case
 import RPi.GPIO as gpio
 import time
