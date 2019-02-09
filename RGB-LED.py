@@ -13,6 +13,6 @@ gpio.setup(ledPin[2], gpio.OUT)
 while True:
   zufallsPin = random.randint(0,2)
   gpio.output(ledPin[zufallsPin], gpio.HIGH)
-  print (random.randint)
+  print (zufallsPin)
   time.sleep(1)
   gpio.output(ledPin[zufallsPin], gpio.LOW)
