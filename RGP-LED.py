@@ -6,7 +6,7 @@ import time
 import random
 
 gpio.setmode(gpio.BCM)
-ledPin = [18,23,24]
+ledPin = [13,19,26]
 gpio.setup(ledPin[0], gpio.OUT)
 gpio.setup(ledPin[1], gpio.OUT)
 gpio.setup(ledPin[2], gpio.OUT)
