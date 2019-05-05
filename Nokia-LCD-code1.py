@@ -7,7 +7,7 @@ from PIL import ImageFont
 import time
 
 spiSettings = SPI.SpiDev(0,0, max_speed_hz=4000000)
-d = LCD.PCD8544(23, 24, spiSettings)
+d = LCD.PCD8544(23, 24, spi=spiSettings)
 
 d.begin(contrast060)
 d.clear()
