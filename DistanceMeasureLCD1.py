@@ -22,11 +22,11 @@ d.display ()
 image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHEIGHT))
 draw = ImageDraw.Draw(image)
 font = ImageFont.load_default()
+draw.text ((5,10), 'Messung started', font=font)
 d.image(image)
 d.display()
 
 print('Messung started')
-draw.text ((5,10), 'Messung started', font=font)
 
 gpio.setup(trig, gpio.OUT)
 gpio.setup(echo, gpio.IN)
@@ -50,6 +50,6 @@ vergangeZeit = stop - start
 entfernung = round(vergangeZeit*34000/2, 2)
 
 print(entfernung)
-draw.text ((5,10), entfernung, font=font)
-d.image(image)
-d.display()
+#draw.text ((5,10), entfernung, font=font)
+#d.image(image)
+#d.display()
