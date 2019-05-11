@@ -14,9 +14,9 @@ d.clear()
 d.display ()
 image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHEIGHT))
 draw = ImageDraw.Draw(image)
-draw.rectangle((0,0,84,84), outline=255, fill=0)
+draw.rectangle((0,0,84,84), outline=0, fill=255)
 
-draw.ellipse((2,2,27,22), outline=255, fill=255)
+draw.ellipse((2,2,27,22), outline=255, fill=0)
 draw.rectangle((35,2,54,22), outline=0, fill=255)
 draw.polygon([(63,33), (73,2), (83,22)], outline=0, fill=255)
 
