@@ -26,30 +26,30 @@ draw.text ((5,10), 'Messung started', font=font)
 d.image(image)
 d.display()
 
-print('Messung started')
+#print('Messung started')
 
-gpio.setup(trig, gpio.OUT)
-gpio.setup(echo, gpio.IN)
+#gpio.setup(trig, gpio.OUT)
+#gpio.setup(echo, gpio.IN)
 
-gpio.output(trig,False)
+#gpio.output(trig,False)
 
-time.sleep(0.5)
+#time.sleep(0.5)
 
-gpio.output(trig, True)
-time.sleep(0.00001)
-gpio.output(trig, False)
+#gpio.output(trig, True)
+#time.sleep(0.00001)
+#gpio.output(trig, False)
 
-while gpio.input (echo) == 0:
-    start = time.time()
+#while gpio.input (echo) == 0:
+#    start = time.time()
 
-while gpio.input (echo) == 1:
-    stop = time.time()
+#while gpio.input (echo) == 1:
+#    stop = time.time()
 
-vergangeZeit = stop - start
+#vergangeZeit = stop - start
 
-entfernung = round(vergangeZeit*34000/2, 2)
+#entfernung = round(vergangeZeit*34000/2, 2)
 
-print(entfernung)
+#print(entfernung)
 #draw.text ((5,10), entfernung, font=font)
 #d.image(image)
 #d.display()
