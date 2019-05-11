@@ -48,9 +48,9 @@ while gpio.input (echo) == 1:
 
 vergangeZeit = stop-start
 
-entfernung = round(vergangeZeit*34000/2, 2)
+entfernung = round(vergangeZeit*343200/2, 2)
 
-print(entfernung)
+print(entfernung+'cm')
 #draw.text ((5,10), entfernung, font=font)
 #d.image(image)
 #d.display()
