@@ -23,7 +23,8 @@ image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHEIGHT))
 draw = ImageDraw.Draw(image)
 draw .rectangle((0,0,84,84), outline=255, fill=255)
 font = ImageFont.load_default()
-draw.text ((5,10), 'Messung Start', font=font)
+draw.text ((5,10), 'Messung', font=font)
+draw.text ((30,10), 'Start', font=font)
 d.image(image)
 d.display()
 gpio.setup(22,gpio.IN,pull_up_down=gpio.PUD_UP)
@@ -35,6 +36,8 @@ gpio.setup(echo, gpio.IN)
 # Schlaufe start
 while True:
     draw .rectangle((0,0,84,84), outline=255, fill=255)
+    draw.text ((30,10), 'Running', font=font)
+
     #buttonPressed = gpio.input(22)
     #if buttonPressed == 1:
     gpio.output(trig,False)
