@@ -31,7 +31,7 @@ print('Messung started')
 
 gpio.setup(trig, gpio.OUT)
 gpio.setup(echo, gpio.IN)
-buttonPressed = 0
+buttonPressed = 1
 # Schlaufe start
 while buttonPressed:
     buttonPressed = gpio.input(22)
