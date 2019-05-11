@@ -23,14 +23,14 @@ image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHEIGHT))
 draw = ImageDraw.Draw(image)
 draw .rectangle((0,0,84,84), outline=255, fill=255)
 font = ImageFont.load_default()
-draw.text ((5,10), 'Messung started', font=font)
+draw.text ((5,10), 'Messung Start', font=font)
 d.image(image)
 d.display()
 
 print('Messung started')
 
-#gpio.setup(trig, gpio.OUT)
-#gpio.setup(echo, gpio.IN)
+gpio.setup(trig, gpio.OUT)
+gpio.setup(echo, gpio.IN)
 
 #gpio.output(trig,False)
 
