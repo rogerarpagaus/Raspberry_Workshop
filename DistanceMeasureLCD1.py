@@ -52,6 +52,6 @@ entfernung = round(vergangeZeit*343200/2, 2)
 Text = "cm"
 Meldung = str(entfernung) + Text
 print(Meldung)
-draw.text ((5,10), Meldung, font=font)
+draw.text ((5,20), Meldung, font=font)
 d.image(image)
 d.display()
