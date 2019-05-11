@@ -57,8 +57,8 @@ while True:
         Einheit = "mm"
         Text = "Distanz ist"
         Meldung = str(entfernung) + Einheit
-        print(Text)
-        print(Meldung)
+        #print(Text)
+        #print(Meldung)
         draw.text ((5,20), Text, font=font)
         draw.text ((5,30), Meldung, font=font)
         d.image(image)
