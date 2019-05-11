@@ -63,7 +63,7 @@ while True:
     Meldung = str(entfernung) + Einheit
     #print(Text)
     #print(Meldung)
-    draw.text ((5,20), Text, font=font)
-    draw.text ((5,30), Meldung, font=font)
+    draw.text ((1,25), Text, font=font)
+    draw.text ((1,35), Meldung, font=font)
     d.image(image)
     d.display()
