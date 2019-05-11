@@ -46,7 +46,7 @@ while gpio.input (echo) == 0:
 while gpio.input (echo) == 1:
     stop = time.time()
 
-vergangeZeit = stop - start
+vergangeZeit = stop-start
 
 entfernung = round(vergangeZeit*34000/2, 2)
 
