@@ -9,7 +9,7 @@ import time
 spiSettings = SPI.SpiDev(0,0, max_speed_hz=4000000)
 d = LCD.PCD8544(23, 24, spi=spiSettings)
 
-d.begin(contrast060)
+d.begin(contrast=60)
 d.clear()
 d.display ()
 image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHIGHT))
