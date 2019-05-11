@@ -35,8 +35,8 @@ gpio.setup(echo, gpio.IN)
 # Schlaufe start
 while True:
     draw .rectangle((0,0,84,84), outline=255, fill=255)
-    buttonPressed = gpio.input(22)
-    if buttonPressed == 1:
+    #buttonPressed = gpio.input(22)
+    #if buttonPressed == 1:
         gpio.output(trig,False)
 
         time.sleep(0.5)
