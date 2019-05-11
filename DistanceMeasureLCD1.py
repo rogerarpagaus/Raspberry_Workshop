@@ -50,7 +50,7 @@ vergangeZeit = stop-start
 
 entfernung = round(vergangeZeit*343200/2, 2)
 
-print(entfernung+'cm')
+print(entfernung+"cm")
 #draw.text ((5,10), entfernung, font=font)
 #d.image(image)
 #d.display()
