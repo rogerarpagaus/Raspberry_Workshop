@@ -29,8 +29,8 @@ echo = 4
 
 print('Messung started')
 
-gpio.setup(trig, gpio.OUT)
-#gpio.setup(echo, gpio.IN)
+#gpio.setup(trig, gpio.OUT)
+gpio.setup(echo, gpio.IN)
 
 gpio.output(trig,False)
 
