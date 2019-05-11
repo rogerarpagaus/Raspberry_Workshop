@@ -23,8 +23,8 @@ image = Image.new('1', (LCD.LCDWIDTH, LCD.LCDHEIGHT))
 draw = ImageDraw.Draw(image)
 draw .rectangle((0,0,84,84), outline=255, fill=255)
 font = ImageFont.load_default()
-draw.text ((5,1), 'Measurement', font=font)
-draw.text ((50,10), 'Start', font=font)
+draw.text ((1,1), 'Measurement', font=font)
+draw.text ((1,10), 'Start', font=font)
 d.image(image)
 d.display()
 gpio.setup(22,gpio.IN,pull_up_down=gpio.PUD_UP)
@@ -36,8 +36,8 @@ gpio.setup(echo, gpio.IN)
 # Schlaufe start
 while True:
     draw .rectangle((0,0,84,84), outline=255, fill=255)
-    draw.text ((5,1), 'Measurement', font=font)
-    draw.text ((40,10), 'Running', font=font)
+    draw.text ((1,1), 'Measurement', font=font)
+    draw.text ((1,10), 'Running', font=font)
 
     #buttonPressed = gpio.input(22)
     #if buttonPressed == 1:
@@ -59,7 +59,7 @@ while True:
 
     entfernung = round(vergangeZeit*343200/2, 2)
     Einheit = "mm"
-    Text = "Distanz ist"
+    Text = "Distance is"
     Meldung = str(entfernung) + Einheit
     #print(Text)
     #print(Meldung)
