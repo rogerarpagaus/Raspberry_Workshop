@@ -50,9 +50,11 @@ vergangeZeit = stop-start
 
 entfernung = round(vergangeZeit*343200/2, 2)
 Einheit = "mm"
-Text = "Distanz ="
-Meldung = Text + str(entfernung) + Einheit
+Text = "Distanz ist"
+Meldung = str(entfernung) + Einheit
+print(Text)
 print(Meldung)
-draw.text ((5,20), Meldung, font=font)
+draw.text ((5,20), Text, font=font)
+draw.text ((5,30), Meldung, font=font)
 d.image(image)
 d.display()
