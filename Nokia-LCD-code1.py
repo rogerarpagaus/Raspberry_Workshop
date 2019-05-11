@@ -22,7 +22,7 @@ draw.polygon([(63,33), (73,2), (83,22)], outline=0, fill=255)
 
 font = ImageFont.load_default()
 draw.text ((8,30), 'Hello World', font=font)
-draw.text ((10,36), 'Roger', font=font)
+draw.text ((30,37), 'Roger', font=font)
 
 d.image(image)
 d.display()
