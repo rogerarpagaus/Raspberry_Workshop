@@ -35,7 +35,7 @@ gpio.setup(echo, gpio.IN)
 # Schlaufe start
 while True:
     buttonPressed = gpio.input(22)
-    if buttonPressed == 1:
+    if buttonPressed == 0:
         gpio.output(trig,False)
 
         time.sleep(0.5)
