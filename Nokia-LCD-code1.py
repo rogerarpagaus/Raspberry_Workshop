@@ -21,7 +21,7 @@ draw.rectangle((35,2,54,22), outline=0, fill=255)
 draw.polygon([(63,33), (73,2), (83,22)], outline=0, fill=255)
 
 font = ImageFont.load_default()
-draw.text ((8,30), 'Hello World', font=font)
+draw.text ((5,35), 'Hello World Roger', font=font)
 
 d.image(image)
 d.display()
