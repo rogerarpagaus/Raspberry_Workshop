@@ -31,33 +31,34 @@ print('Messung started')
 
 gpio.setup(trig, gpio.OUT)
 gpio.setup(echo, gpio.IN)
-buttonPressed = 1
+
 # Schlaufe start
-while buttonPressed:
+while True:
     buttonPressed = gpio.input(22)
-    gpio.output(trig,False)
+    if buttonPressed == 1:
+        gpio.output(trig,False)
 
-    time.sleep(0.5)
+        time.sleep(0.5)
 
-    gpio.output(trig, True)
-    time.sleep(0.00001)
-    gpio.output(trig, False)
+        gpio.output(trig, True)
+        time.sleep(0.00001)
+        gpio.output(trig, False)
 
-    while gpio.input (echo) == 0:
-        start = time.time()
+        while gpio.input (echo) == 0:
+            start = time.time()
 
-    while gpio.input (echo) == 1:
-        stop = time.time()
+        while gpio.input (echo) == 1:
+            stop = time.time()
 
-    vergangeZeit = stop-start
+        vergangeZeit = stop-start
 
-    entfernung = round(vergangeZeit*343200/2, 2)
-    Einheit = "mm"
-    Text = "Distanz ist"
-    Meldung = str(entfernung) + Einheit
-    print(Text)
-    print(Meldung)
-    draw.text ((5,20), Text, font=font)
-    draw.text ((5,30), Meldung, font=font)
-    d.image(image)
-    d.display()
+        entfernung = round(vergangeZeit*343200/2, 2)
+        Einheit = "mm"
+        Text = "Distanz ist"
+        Meldung = str(entfernung) + Einheit
+        print(Text)
+        print(Meldung)
+        draw.text ((5,20), Text, font=font)
+        draw.text ((5,30), Meldung, font=font)
+        d.image(image)
+        d.display()
