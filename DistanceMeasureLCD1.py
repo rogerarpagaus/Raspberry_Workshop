@@ -28,7 +28,7 @@ d.display()
 print('Messung started')
 draw.text ((5,10), 'Messung started', font=font)
 
-gpio.setup(trig, GPIO.OUT)
+gpio.setup(trig, gpio.OUT)
 gpio.setup(echo, gpio.IN)
 
 gpio.output(trig,False)
