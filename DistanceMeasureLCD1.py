@@ -10,8 +10,8 @@ import time
 
 gpio.setmode(gpio.BCM)
 
-trig = 3
-echo = 4
+trig = 17
+echo = 27
 
 #spiSettings = SPI.SpiDev(0,0, max_speed_hz=4000000)
 #d = LCD.PCD8544(23, 24, spi=spiSettings)
@@ -29,7 +29,7 @@ echo = 4
 
 print('Messung started')
 
-#gpio.setup(trig, gpio.OUT)
+gpio.setup(trig, gpio.OUT)
 gpio.setup(echo, gpio.IN)
 
 gpio.output(trig,False)
